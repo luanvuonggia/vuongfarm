@@ -1,0 +1,137 @@
+body {
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+.wrapper {
+  background-color: white;
+  padding: 30px 70px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  text-align: center;
+}
+#content {
+  overflow: auto;
+}
+
+.column1,
+.column2,
+.column3 {
+  width: 31.3%;
+  float: left;
+}
+
+.column1 {
+  float: left;
+}
+.column2 {
+  margin: 0% 3%;
+}
+.column3 {
+  float: right;
+  margin: 0%;
+}
+#content .banner1 .column1 {
+  display: flex;
+  width: 50%;
+  float: left;
+  height: 90%;
+  margin-left: 48px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+#content .banner .column1 {
+  display: flex;
+  width: 30%;
+  float: left;
+  height: 90%;
+  margin-left: 48px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+#content .banner1 .column2 {
+  width: 35%;
+  height: auto;
+  float: right;
+}
+.column1 .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.banner,
+.article {
+  background-color: #efefef;
+  height: 15em;
+  margin-bottom: 1em;
+}
+.banner1 {
+  background-color: #c1dcdc;
+  height: 25em;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+#content .banner1 .column1 h1 {
+  height: 128px;
+  width: 345px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  color: #000000;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchbar{
+  position: relative;
+  display: flex;
+  height: 60px;
+  width: inherit;
+}
+.searchbar input[type="search"] {
+  width: 100%;
+}
+.searchbar button{
+  background: #16bdae;
+  border: 0;
+  border-radius: 7px;
+  color: white;
+  padding: 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.seemore{
+  content: "See More";
+  
+  background: #C1DCDC;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.seemore a{
+  color: black;
+}

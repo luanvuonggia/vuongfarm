@@ -1,64 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-  margin: 0 auto;
-  background-color: lightgrey;
-}
-.wrapper {
-  background-color: white;
-  padding: 30px 70px;
-}
-
-ul {
-  text-align: center;
-}
-#content {
-  overflow: auto;
-}
-
-.column1, .column2, .column3 {
-  width: 31.3%;
-  float: left;
-}
-
-.column1 {
-  float: left;
-}
-.column2 {
-  margin: 0% 3%;
-}
-.column3 {
-  float: right;
-  margin: 0%;
-}
-
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-.banner, .article {
-  background-color: #efefef;
-  height: 10em;
-  margin-bottom: 1em;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
         <ul class="nav">
           <li class="logo">VuongFarm</li>
           <li><a href="">Home</a></li>
@@ -70,27 +21,59 @@ li {
           <li>y</li>
           <li>z</li>
         </ul>
+      </div>
+      <div id="content">
+        <div class="banner1">
+          <div class="column1">
+            <h1>Buy your dream plant</h1>
+            <div class="text">
+              <div>50+<br />Plant Species</div>
+              <div>100+<br />Customers</div>
+            </div>
+            <div class="searchbar">
+              <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="What are you looking for?"
+              />
+              <button><img src="./icons/searchicon.svg" alt="" /></button>
+            </div>
+          </div>
+          <div class="column2">
+            <img
+              src="./icons/Group 14.svg"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+        </div>
+        <div class="banner">
+          <div class="column1">
+            <h1>Best Selling Plants</h1>
+            <div class="text">
+                Easiest way to healthy life by buying your favorite plants
+            </div>
+            <div class="seemore">
+              <a href="">See More
+              <img src="./icons/arrow.svg" alt=""> </a>
+            </div>
+          </div>
+        </div>
+        <div class="banner">
+          <p>About Us</p>
+        </div>
+        <div class="banner">
+          <p>Categories</p>
+        </div>
+        <div class="banner">
+          <p>What say?</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>&copy; 2023 all Right Reserved Term of use LowBoy</p>
+      </footer>
     </div>
-    <div id="content">
-      <div class="banner">
-        <p>Banner</p>
-      </div>
-      <div class="banner">
-        <p>Best Seller</p>
-      </div>
-      <div class="banner">
-        <p>About Us</p>
-      </div>
-      <div class="banner">
-        <p>Categories</p>
-      </div>
-      <div class="banner">
-        <p>What say?</p>
-      </div>
-    </div>
-    <footer class="footer">
-      <p>&copy; 2023 all Right Reserved Term of use  LowBoy</p>
-    </footer>
-  </div>
-</body>
+  </body>
 </html>
