@@ -44,7 +44,8 @@ ul {
   justify-content: space-between;
   align-content: flex-start;
 }
-#content .banner .column1 {
+#content .banner .column1,
+#content .banner2 .column1 {
   display: flex;
   width: 30%;
   float: left;
@@ -52,13 +53,20 @@ ul {
   margin-left: 48px;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: flex-start;
 }
 #content .banner1 .column2 {
   width: 35%;
   height: auto;
   float: right;
+}
+#content .banner2 .column1 {
+  height: 25%;
+}
+.banner .column2 {
+  display: flex;
+  width: 70%;
 }
 .column1 .text {
   display: flex;
@@ -73,10 +81,37 @@ li {
 }
 
 .banner,
-.article {
+.article,
+.banner2,
+.banner3,
+.banner4,
+.banner5 {
   background-color: #efefef;
   height: 15em;
   margin-bottom: 1em;
+}
+.banner4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner2 {
+  background-color: white;
+  height: 55em;
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.banner2 .column2 {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 95%;
 }
 .banner1 {
   background-color: #c1dcdc;
@@ -100,7 +135,7 @@ li {
   align-items: center;
   justify-content: space-between;
 }
-.searchbar{
+.searchbar {
   position: relative;
   display: flex;
   height: 60px;
@@ -109,7 +144,7 @@ li {
 .searchbar input[type="search"] {
   width: 100%;
 }
-.searchbar button{
+.searchbar button {
   background: #16bdae;
   border: 0;
   border-radius: 7px;
@@ -119,10 +154,9 @@ li {
   right: 5px;
   top: 5px;
 }
-.seemore{
+.seemore {
   content: "See More";
-  
-  background: #C1DCDC;
+  background: #c1dcdc;
   border: 0;
   border-radius: 10px;
   padding: 15px;
@@ -132,6 +166,16 @@ li {
   justify-content: space-evenly;
   width: 25%;
 }
-.seemore a{
+.seemore a {
   color: black;
+}
+.plant-text {
+  display: flex;
+  flex-direction: column;
+}
+.banner4 p{
+  text-align: center;
+}
+.aboutus{
+  display: flex;
 }
