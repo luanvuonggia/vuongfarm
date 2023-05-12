@@ -186,6 +186,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.25s linear;
 }
 
 .banner-image {
@@ -814,4 +815,8 @@ body::-webkit-scrollbar-track {
   .customer-item-start {
     transform: translateY(20px);
   }
+}
+
+.banner-box:hover {
+  transform: scale(1.2);
 }
