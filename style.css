@@ -173,9 +173,21 @@ li {
   display: flex;
   flex-direction: column;
 }
-.banner4 p{
+.banner4 p {
   text-align: center;
 }
-.aboutus{
+.aboutus {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 70%;
+}
+.aboutus-element {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
